@@ -12,3 +12,20 @@
 - https://github.com/jeroen94704/klepcbgen
 - https://wiki.ai03.com/books/pcb-design/page/pcb-guide-part-1---preparations
 - https://github.com/ruiqimao/keyboard-pcb-guide
+## Needed Components (Will be more specific in the future)
+- Resistors
+- Diodes
+- Key Switches
+- (Key Caps)
+- MCU
+- Crystal/Clock
+- USB-C Port
+- RGB-LEDs
+## Needed Tools
+- Soldering Iron
+- Soldering Paste
+- Solder
+- Hot Air Gun
+- Flux
+- Magnifying glass / microscope
+- Fan
