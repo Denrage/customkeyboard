@@ -1,8 +1,6 @@
 # This file intentionally left blank
 # MCU name
-MCU = atmega32u4
-# Bootloader selection
-BOOTLOADER = qmk-dfu
-
+RGBLIGHT_DRIVER = APA102
+RAW_ENABLE = yes
 RGBLIGHT_ENABLE = yes
 LTO_ENABLE = yes
