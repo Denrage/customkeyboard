@@ -1,0 +1,1004 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_DIP_x01 K_NUM1
+U 1 1 63CCDFB2
+P 1300 950
+F 0 "K_NUM1" H 1300 1100 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1300 1126 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1300 950 50  0001 C CNN
+F 3 "~" H 1300 950 50  0001 C CNN
+	1    1300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_NUM1
+U 1 1 63CCEB4F
+P 1300 1450
+F 0 "L_NUM1" H 1300 1750 60  0000 C CNN
+F 1 "SK9822" H 1300 1781 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 1300 1000 60  0001 C CNN
+F 3 "" H 1300 1000 60  0000 C CNN
+	1    1300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_DIV1
+U 1 1 63CD8C45
+P 2800 950
+F 0 "K_DIV1" H 2800 1100 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2800 1126 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 2800 950 50  0001 C CNN
+F 3 "~" H 2800 950 50  0001 C CNN
+	1    2800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_DIV1
+U 1 1 63CD8C4B
+P 2800 1450
+F 0 "L_DIV1" H 2800 1750 60  0000 C CNN
+F 1 "SK9822" H 2800 1781 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 2800 1000 60  0001 C CNN
+F 3 "" H 2800 1000 60  0000 C CNN
+	1    2800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_DIV1
+U 1 1 63CD8C53
+P 3250 950
+F 0 "D_DIV1" H 3250 1050 50  0000 C CNN
+F 1 "DIODE" H 3250 1076 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3250 950 50  0001 C CNN
+F 3 "~" H 3250 950 50  0001 C CNN
+F 4 "Y" H 3250 950 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 3250 950 50  0001 L CNN "Spice_Primitive"
+	1    3250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_MUL1
+U 1 1 63CDA382
+P 4300 950
+F 0 "K_MUL1" H 4300 1100 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4300 1126 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4300 950 50  0001 C CNN
+F 3 "~" H 4300 950 50  0001 C CNN
+	1    4300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_MUL1
+U 1 1 63CDA388
+P 4300 1450
+F 0 "L_MUL1" H 4300 1750 60  0000 C CNN
+F 1 "SK9822" H 4300 1781 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 4300 1000 60  0001 C CNN
+F 3 "" H 4300 1000 60  0000 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_MUL1
+U 1 1 63CDA390
+P 4750 950
+F 0 "D_MUL1" H 4750 1050 50  0000 C CNN
+F 1 "DIODE" H 4750 1076 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4750 950 50  0001 C CNN
+F 3 "~" H 4750 950 50  0001 C CNN
+F 4 "Y" H 4750 950 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4750 950 50  0001 L CNN "Spice_Primitive"
+	1    4750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_SUB1
+U 1 1 63CDAF0D
+P 5800 950
+F 0 "K_SUB1" H 5800 1100 50  0000 C CNN
+F 1 "SW_DIP_x01" H 5800 1126 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 5800 950 50  0001 C CNN
+F 3 "~" H 5800 950 50  0001 C CNN
+	1    5800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_SUB1
+U 1 1 63CDAF13
+P 5800 1450
+F 0 "L_SUB1" H 5800 1750 60  0000 C CNN
+F 1 "SK9822" H 5800 1781 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 5800 1000 60  0001 C CNN
+F 3 "" H 5800 1000 60  0000 C CNN
+	1    5800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_SUB1
+U 1 1 63CDAF1B
+P 6250 950
+F 0 "D_SUB1" H 6250 1050 50  0000 C CNN
+F 1 "DIODE" H 6250 1076 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 950 50  0001 C CNN
+F 3 "~" H 6250 950 50  0001 C CNN
+F 4 "Y" H 6250 950 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 6250 950 50  0001 L CNN "Spice_Primitive"
+	1    6250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_7
+U 1 1 63CDDC5D
+P 1300 2100
+F 0 "K_7" H 1300 2250 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1300 2276 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1300 2100 50  0001 C CNN
+F 3 "~" H 1300 2100 50  0001 C CNN
+	1    1300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_7
+U 1 1 63CDDC63
+P 1300 2600
+F 0 "L_7" H 1300 2300 60  0000 C CNN
+F 1 "SK9822" H 1300 2931 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 1300 2150 60  0001 C CNN
+F 3 "" H 1300 2150 60  0000 C CNN
+	1    1300 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_7
+U 1 1 63CDDC6B
+P 1750 2100
+F 0 "D_7" H 1750 2200 50  0000 C CNN
+F 1 "DIODE" H 1750 2226 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1750 2100 50  0001 C CNN
+F 3 "~" H 1750 2100 50  0001 C CNN
+F 4 "Y" H 1750 2100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 1750 2100 50  0001 L CNN "Spice_Primitive"
+	1    1750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_8
+U 1 1 63CDEC5E
+P 2800 2100
+F 0 "K_8" H 2800 2367 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2800 2276 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 2800 2100 50  0001 C CNN
+F 3 "~" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_8
+U 1 1 63CDEC64
+P 2800 2600
+F 0 "L_8" H 2800 2300 60  0000 C CNN
+F 1 "SK9822" H 2800 2931 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 2800 2150 60  0001 C CNN
+F 3 "" H 2800 2150 60  0000 C CNN
+	1    2800 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_8
+U 1 1 63CDEC6C
+P 3250 2100
+F 0 "D_8" H 3250 2317 50  0000 C CNN
+F 1 "DIODE" H 3250 2226 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3250 2100 50  0001 C CNN
+F 3 "~" H 3250 2100 50  0001 C CNN
+F 4 "Y" H 3250 2100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 3250 2100 50  0001 L CNN "Spice_Primitive"
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_9
+U 1 1 63CDF35C
+P 4300 2100
+F 0 "K_9" H 4300 2367 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4300 2276 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4300 2100 50  0001 C CNN
+F 3 "~" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_9
+U 1 1 63CDF362
+P 4350 2600
+F 0 "L_9" H 4350 2300 60  0000 C CNN
+F 1 "SK9822" H 4350 2931 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 4350 2150 60  0001 C CNN
+F 3 "" H 4350 2150 60  0000 C CNN
+	1    4350 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_9
+U 1 1 63CDF36A
+P 4750 2100
+F 0 "D_9" H 4750 2317 50  0000 C CNN
+F 1 "DIODE" H 4750 2226 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4750 2100 50  0001 C CNN
+F 3 "~" H 4750 2100 50  0001 C CNN
+F 4 "Y" H 4750 2100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4750 2100 50  0001 L CNN "Spice_Primitive"
+	1    4750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_ADD1
+U 1 1 63CDFAEF
+P 5850 3200
+F 0 "K_ADD1" H 5850 3350 50  0000 C CNN
+F 1 "SW_DIP_x01" H 5850 3376 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 5850 3200 50  0001 C CNN
+F 3 "~" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_ADD1
+U 1 1 63CDFAF5
+P 5850 3750
+F 0 "L_ADD1" H 5850 4050 60  0000 C CNN
+F 1 "SK9822" H 5850 4081 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 5850 3300 60  0001 C CNN
+F 3 "" H 5850 3300 60  0000 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_ADD1
+U 1 1 63CDFAFD
+P 6300 3200
+F 0 "D_ADD1" H 6300 3300 50  0000 C CNN
+F 1 "DIODE" H 6300 3326 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6300 3200 50  0001 C CNN
+F 3 "~" H 6300 3200 50  0001 C CNN
+F 4 "Y" H 6300 3200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 6300 3200 50  0001 L CNN "Spice_Primitive"
+	1    6300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_4
+U 1 1 63CE0181
+P 1300 3200
+F 0 "K_4" H 1300 3350 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1300 3376 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1300 3200 50  0001 C CNN
+F 3 "~" H 1300 3200 50  0001 C CNN
+	1    1300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_4
+U 1 1 63CE018F
+P 1750 3200
+F 0 "D_4" H 1750 3300 50  0000 C CNN
+F 1 "DIODE" H 1750 3326 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1750 3200 50  0001 C CNN
+F 3 "~" H 1750 3200 50  0001 C CNN
+F 4 "Y" H 1750 3200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 1750 3200 50  0001 L CNN "Spice_Primitive"
+	1    1750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_5
+U 1 1 63CE0658
+P 2800 3200
+F 0 "K_5" H 2800 3350 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2800 3376 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 2800 3200 50  0001 C CNN
+F 3 "~" H 2800 3200 50  0001 C CNN
+	1    2800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_5
+U 1 1 63CE065E
+P 2800 3750
+F 0 "L_5" H 2800 4050 60  0000 C CNN
+F 1 "SK9822" H 2800 4081 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 2800 3300 60  0001 C CNN
+F 3 "" H 2800 3300 60  0000 C CNN
+	1    2800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_5
+U 1 1 63CE0666
+P 3250 3200
+F 0 "D_5" H 3250 3300 50  0000 C CNN
+F 1 "DIODE" H 3250 3326 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3250 3200 50  0001 C CNN
+F 3 "~" H 3250 3200 50  0001 C CNN
+F 4 "Y" H 3250 3200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 3250 3200 50  0001 L CNN "Spice_Primitive"
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_6
+U 1 1 63CE0827
+P 4350 3200
+F 0 "K_6" H 4350 3350 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4350 3376 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4350 3200 50  0001 C CNN
+F 3 "~" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_6
+U 1 1 63CE082D
+P 4350 3750
+F 0 "L_6" H 4350 4050 60  0000 C CNN
+F 1 "SK9822" H 4350 4081 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 4350 3300 60  0001 C CNN
+F 3 "" H 4350 3300 60  0000 C CNN
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_6
+U 1 1 63CE0835
+P 4800 3200
+F 0 "D_6" H 4800 3300 50  0000 C CNN
+F 1 "DIODE" H 4800 3326 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 3200 50  0001 C CNN
+F 3 "~" H 4800 3200 50  0001 C CNN
+F 4 "Y" H 4800 3200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4800 3200 50  0001 L CNN "Spice_Primitive"
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_1
+U 1 1 63CE138E
+P 1300 4400
+F 0 "K_1" H 1300 4550 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1300 4576 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1300 4400 50  0001 C CNN
+F 3 "~" H 1300 4400 50  0001 C CNN
+	1    1300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_2
+U 1 1 63CE139C
+P 3250 4400
+F 0 "D_2" H 3250 4500 50  0000 C CNN
+F 1 "DIODE" H 3250 4526 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3250 4400 50  0001 C CNN
+F 3 "~" H 3250 4400 50  0001 C CNN
+F 4 "Y" H 3250 4400 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 3250 4400 50  0001 L CNN "Spice_Primitive"
+	1    3250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_2
+U 1 1 63CE161D
+P 2800 4400
+F 0 "K_2" H 2800 4550 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2800 4576 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 2800 4400 50  0001 C CNN
+F 3 "~" H 2800 4400 50  0001 C CNN
+	1    2800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_2
+U 1 1 63CE1623
+P 2800 4900
+F 0 "L_2" H 2800 4600 60  0000 C CNN
+F 1 "SK9822" H 2800 5231 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 2800 4450 60  0001 C CNN
+F 3 "" H 2800 4450 60  0000 C CNN
+	1    2800 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_3
+U 1 1 63CE162B
+P 4800 4400
+F 0 "D_3" H 4800 4500 50  0000 C CNN
+F 1 "DIODE" H 4800 4526 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 4400 50  0001 C CNN
+F 3 "~" H 4800 4400 50  0001 C CNN
+F 4 "Y" H 4800 4400 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4800 4400 50  0001 L CNN "Spice_Primitive"
+	1    4800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_3
+U 1 1 63CE1DE6
+P 4350 4400
+F 0 "K_3" H 4350 4550 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4350 4576 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4350 4400 50  0001 C CNN
+F 3 "~" H 4350 4400 50  0001 C CNN
+	1    4350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_3
+U 1 1 63CE1DEC
+P 4350 4900
+F 0 "L_3" H 4350 4600 60  0000 C CNN
+F 1 "SK9822" H 4350 5231 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 4350 4450 60  0001 C CNN
+F 3 "" H 4350 4450 60  0000 C CNN
+	1    4350 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_1
+U 1 1 63CE1DF4
+P 1750 4400
+F 0 "D_1" H 1750 4500 50  0000 C CNN
+F 1 "DIODE" H 1750 4526 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1750 4400 50  0001 C CNN
+F 3 "~" H 1750 4400 50  0001 C CNN
+F 4 "Y" H 1750 4400 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 1750 4400 50  0001 L CNN "Spice_Primitive"
+	1    1750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_ENTER1
+U 1 1 63CE207E
+P 5850 5800
+F 0 "K_ENTER1" H 5850 5950 50  0000 C CNN
+F 1 "SW_DIP_x01" H 5850 5976 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 5850 5800 50  0001 C CNN
+F 3 "~" H 5850 5800 50  0001 C CNN
+	1    5850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_ENTER1
+U 1 1 63CE2084
+P 5850 6350
+F 0 "L_ENTER1" H 5850 6650 60  0000 C CNN
+F 1 "SK9822" H 5850 6681 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 5850 5900 60  0001 C CNN
+F 3 "" H 5850 5900 60  0000 C CNN
+	1    5850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_ENTER1
+U 1 1 63CE208C
+P 6300 5800
+F 0 "D_ENTER1" H 6300 5900 50  0000 C CNN
+F 1 "DIODE" H 6300 5926 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6300 5800 50  0001 C CNN
+F 3 "~" H 6300 5800 50  0001 C CNN
+F 4 "Y" H 6300 5800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 6300 5800 50  0001 L CNN "Spice_Primitive"
+	1    6300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_0
+U 1 1 63CE3A78
+P 1300 5800
+F 0 "K_0" H 1300 5950 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1300 5976 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1300 5800 50  0001 C CNN
+F 3 "~" H 1300 5800 50  0001 C CNN
+	1    1300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_0
+U 1 1 63CE3A7E
+P 1300 6350
+F 0 "L_0" H 1300 6650 60  0000 C CNN
+F 1 "SK9822" H 1300 6681 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 1300 5900 60  0001 C CNN
+F 3 "" H 1300 5900 60  0000 C CNN
+	1    1300 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_0
+U 1 1 63CE3A86
+P 1750 5800
+F 0 "D_0" H 1750 6017 50  0000 C CNN
+F 1 "DIODE" H 1750 5926 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1750 5800 50  0001 C CNN
+F 3 "~" H 1750 5800 50  0001 C CNN
+F 4 "Y" H 1750 5800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 1750 5800 50  0001 L CNN "Spice_Primitive"
+	1    1750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 K_DOT1
+U 1 1 63CE4666
+P 4350 5800
+F 0 "K_DOT1" H 4350 5950 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4350 5976 50  0001 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4350 5800 50  0001 C CNN
+F 3 "~" H 4350 5800 50  0001 C CNN
+	1    4350 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_DOT1
+U 1 1 63CE466C
+P 4350 6350
+F 0 "L_DOT1" H 4350 6650 60  0000 C CNN
+F 1 "SK9822" H 4350 6681 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 4350 5900 60  0001 C CNN
+F 3 "" H 4350 5900 60  0000 C CNN
+	1    4350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D_DOT1
+U 1 1 63CE4674
+P 4800 5800
+F 0 "D_DOT1" H 4800 5900 50  0000 C CNN
+F 1 "DIODE" H 4800 5926 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 5800 50  0001 C CNN
+F 3 "~" H 4800 5800 50  0001 C CNN
+F 4 "Y" H 4800 5800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4800 5800 50  0001 L CNN "Spice_Primitive"
+	1    4800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L crump:SK9822 L_4
+U 1 1 63CE0187
+P 1300 3750
+F 0 "L_4" H 1300 4050 60  0000 C CNN
+F 1 "SK9822" H 1300 4081 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 1300 3300 60  0001 C CNN
+F 3 "" H 1300 3300 60  0000 C CNN
+	1    1300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1300 2350 1300
+Wire Wire Line
+	1750 1450 2350 1450
+Wire Wire Line
+	4750 1300 5350 1300
+Wire Wire Line
+	4750 1450 5350 1450
+$Comp
+L crump:SK9822 L_1
+U 1 1 63CE1394
+P 1300 4900
+F 0 "L_1" H 1300 4600 60  0000 C CNN
+F 1 "SK9822" H 1300 5231 60  0001 C CNN
+F 2 "crump:APA102_hand_solder" H 1300 4450 60  0001 C CNN
+F 3 "" H 1300 4450 60  0000 C CNN
+	1    1300 4900
+	-1   0    0    1   
+$EndComp
+Text HLabel 6300 6200 2    50   Input ~ 0
+DOUT
+Text HLabel 6300 6350 2    50   Input ~ 0
+COUT
+Text HLabel 1000 950  0    50   Input ~ 0
+COL1
+Text HLabel 850  1300 0    50   Input ~ 0
+DIN
+Text HLabel 850  1450 0    50   Input ~ 0
+CIN
+$Comp
+L power:GND #PWR0102
+U 1 1 63CE2895
+P 850 1600
+F 0 "#PWR0102" H 850 1350 50  0001 C CNN
+F 1 "GND" H 855 1427 50  0000 C CNN
+F 2 "" H 850 1600 50  0001 C CNN
+F 3 "" H 850 1600 50  0001 C CNN
+	1    850  1600
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 1600 2    50   Input ~ 0
+VCC
+Text HLabel 1900 950  2    50   Input ~ 0
+ROW1
+Text HLabel 1000 2100 0    50   Input ~ 0
+COL1
+Text HLabel 1000 3200 0    50   Input ~ 0
+COL1
+Text HLabel 1000 4400 0    50   Input ~ 0
+COL1
+Text HLabel 1000 5800 0    50   Input ~ 0
+COL1
+Text HLabel 3400 950  2    50   Input ~ 0
+ROW1
+Text HLabel 4900 950  2    50   Input ~ 0
+ROW1
+Text HLabel 6400 950  2    50   Input ~ 0
+ROW1
+Text HLabel 2500 950  0    50   Input ~ 0
+COL2
+Text HLabel 2500 2100 0    50   Input ~ 0
+COL2
+Text HLabel 2500 3200 0    50   Input ~ 0
+COL2
+Text HLabel 2500 4400 0    50   Input ~ 0
+COL2
+Text HLabel 4000 950  0    50   Input ~ 0
+COL3
+Text HLabel 4000 2100 0    50   Input ~ 0
+COL3
+Text HLabel 4050 3200 0    50   Input ~ 0
+COL3
+Text HLabel 4050 4400 0    50   Input ~ 0
+COL3
+Text HLabel 4050 5800 0    50   Input ~ 0
+COL3
+Text HLabel 5500 950  0    50   Input ~ 0
+COL4
+Text HLabel 5550 3200 0    50   Input ~ 0
+COL4
+Text HLabel 5550 5800 0    50   Input ~ 0
+COL4
+Text HLabel 6450 3200 2    50   Input ~ 0
+ROW3
+Text HLabel 6450 5800 2    50   Input ~ 0
+ROW5
+Text HLabel 4950 5800 2    50   Input ~ 0
+ROW5
+Text HLabel 1900 5800 2    50   Input ~ 0
+ROW5
+Text HLabel 1900 2100 2    50   Input ~ 0
+ROW2
+Text HLabel 3400 2100 2    50   Input ~ 0
+ROW2
+Text HLabel 4900 2100 2    50   Input ~ 0
+ROW2
+Text HLabel 1900 3200 2    50   Input ~ 0
+ROW3
+Text HLabel 3400 3200 2    50   Input ~ 0
+ROW3
+Text HLabel 4950 3200 2    50   Input ~ 0
+ROW3
+Text HLabel 1900 4400 2    50   Input ~ 0
+ROW4
+Text HLabel 4950 4400 2    50   Input ~ 0
+ROW4
+Text HLabel 3400 4400 2    50   Input ~ 0
+ROW4
+$Comp
+L power:GND #PWR0103
+U 1 1 63CF3693
+P 2350 1600
+F 0 "#PWR0103" H 2350 1350 50  0001 C CNN
+F 1 "GND" H 2355 1427 50  0000 C CNN
+F 2 "" H 2350 1600 50  0001 C CNN
+F 3 "" H 2350 1600 50  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 63CF3E0B
+P 3850 1600
+F 0 "#PWR0104" H 3850 1350 50  0001 C CNN
+F 1 "GND" H 3855 1427 50  0000 C CNN
+F 2 "" H 3850 1600 50  0001 C CNN
+F 3 "" H 3850 1600 50  0001 C CNN
+	1    3850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 63CF4AF9
+P 5350 1600
+F 0 "#PWR0105" H 5350 1350 50  0001 C CNN
+F 1 "GND" H 5355 1427 50  0000 C CNN
+F 2 "" H 5350 1600 50  0001 C CNN
+F 3 "" H 5350 1600 50  0001 C CNN
+	1    5350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 63CF6503
+P 3250 2450
+F 0 "#PWR0106" H 3250 2200 50  0001 C CNN
+F 1 "GND" H 3350 2450 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "" H 3250 2450 50  0001 C CNN
+	1    3250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 63CF735A
+P 1750 2450
+F 0 "#PWR0107" H 1750 2200 50  0001 C CNN
+F 1 "GND" H 1850 2450 50  0000 C CNN
+F 2 "" H 1750 2450 50  0001 C CNN
+F 3 "" H 1750 2450 50  0001 C CNN
+	1    1750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 63CF8015
+P 850 3900
+F 0 "#PWR0108" H 850 3650 50  0001 C CNN
+F 1 "GND" H 855 3727 50  0000 C CNN
+F 2 "" H 850 3900 50  0001 C CNN
+F 3 "" H 850 3900 50  0001 C CNN
+	1    850  3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 63CF8601
+P 2350 3900
+F 0 "#PWR0109" H 2350 3650 50  0001 C CNN
+F 1 "GND" H 2355 3727 50  0000 C CNN
+F 2 "" H 2350 3900 50  0001 C CNN
+F 3 "" H 2350 3900 50  0001 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 63CF8BFE
+P 3900 3900
+F 0 "#PWR0110" H 3900 3650 50  0001 C CNN
+F 1 "GND" H 3905 3727 50  0000 C CNN
+F 2 "" H 3900 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 63CF9C34
+P 5400 3900
+F 0 "#PWR0111" H 5400 3650 50  0001 C CNN
+F 1 "GND" H 5405 3727 50  0000 C CNN
+F 2 "" H 5400 3900 50  0001 C CNN
+F 3 "" H 5400 3900 50  0001 C CNN
+	1    5400 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 3250 1600 2    50   Input ~ 0
+VCC
+Text HLabel 4750 1600 2    50   Input ~ 0
+VCC
+Text HLabel 6250 1600 2    50   Input ~ 0
+VCC
+Text HLabel 850  2450 0    50   Input ~ 0
+VCC
+$Comp
+L Simulation_SPICE:DIODE D_NUM1
+U 1 1 63CCFE40
+P 1750 950
+F 0 "D_NUM1" H 1750 1050 50  0000 C CNN
+F 1 "DIODE" H 1750 1076 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1750 950 50  0001 C CNN
+F 3 "~" H 1750 950 50  0001 C CNN
+F 4 "Y" H 1750 950 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 1750 950 50  0001 L CNN "Spice_Primitive"
+	1    1750 950 
+	1    0    0    -1  
+$EndComp
+Text HLabel 2350 2450 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	3850 1300 3250 1300
+Wire Wire Line
+	3850 1450 3250 1450
+Wire Wire Line
+	2350 2600 1750 2600
+Wire Wire Line
+	2350 2750 1750 2750
+Text HLabel 3900 2450 0    50   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR0112
+U 1 1 63D7BF2A
+P 4800 2450
+F 0 "#PWR0112" H 4800 2200 50  0001 C CNN
+F 1 "GND" H 4900 2450 50  0000 C CNN
+F 2 "" H 4800 2450 50  0001 C CNN
+F 3 "" H 4800 2450 50  0001 C CNN
+	1    4800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2600 3250 2600
+Wire Wire Line
+	3900 2750 3250 2750
+Wire Wire Line
+	6250 1450 6550 1450
+Wire Wire Line
+	6550 1450 6550 2600
+Wire Wire Line
+	6550 2600 4800 2600
+Wire Wire Line
+	6250 1300 6700 1300
+Wire Wire Line
+	6700 1300 6700 2750
+Wire Wire Line
+	6700 2750 4800 2750
+Text HLabel 1750 3900 2    50   Input ~ 0
+VCC
+Text HLabel 3250 3900 2    50   Input ~ 0
+VCC
+Text HLabel 4800 3900 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	1750 3750 2350 3750
+Wire Wire Line
+	1750 3600 2350 3600
+Wire Wire Line
+	3250 3600 3900 3600
+Wire Wire Line
+	3900 3750 3250 3750
+Text HLabel 6300 3900 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	4800 3600 5400 3600
+Wire Wire Line
+	4800 3750 5400 3750
+Wire Wire Line
+	850  2750 700  2750
+Wire Wire Line
+	700  2750 700  3600
+Wire Wire Line
+	700  3600 850  3600
+Wire Wire Line
+	850  2600 550  2600
+Wire Wire Line
+	550  2600 550  3750
+Wire Wire Line
+	550  3750 850  3750
+$Comp
+L power:GND #PWR0113
+U 1 1 63DAABE0
+P 1750 4750
+F 0 "#PWR0113" H 1750 4500 50  0001 C CNN
+F 1 "GND" H 1850 4750 50  0000 C CNN
+F 2 "" H 1750 4750 50  0001 C CNN
+F 3 "" H 1750 4750 50  0001 C CNN
+	1    1750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 63DAB81C
+P 3250 4750
+F 0 "#PWR0114" H 3250 4500 50  0001 C CNN
+F 1 "GND" H 3350 4750 50  0000 C CNN
+F 2 "" H 3250 4750 50  0001 C CNN
+F 3 "" H 3250 4750 50  0001 C CNN
+	1    3250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 63DAC0D4
+P 4800 4750
+F 0 "#PWR0115" H 4800 4500 50  0001 C CNN
+F 1 "GND" H 4900 4750 50  0000 C CNN
+F 2 "" H 4800 4750 50  0001 C CNN
+F 3 "" H 4800 4750 50  0001 C CNN
+	1    4800 4750
+	1    0    0    -1  
+$EndComp
+Text HLabel 850  4750 0    50   Input ~ 0
+VCC
+Text HLabel 2350 4750 0    50   Input ~ 0
+VCC
+Text HLabel 3900 4750 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	6300 3750 6550 3750
+Wire Wire Line
+	6550 3750 6550 4900
+Wire Wire Line
+	6550 4900 4800 4900
+Wire Wire Line
+	6300 3600 6700 3600
+Wire Wire Line
+	6700 3600 6700 5050
+Wire Wire Line
+	6700 5050 4800 5050
+Wire Wire Line
+	3900 4900 3250 4900
+Wire Wire Line
+	3900 5050 3250 5050
+Wire Wire Line
+	2350 4900 1750 4900
+Wire Wire Line
+	2350 5050 1750 5050
+Wire Wire Line
+	850  5050 650  5050
+Wire Wire Line
+	650  5050 650  6200
+Wire Wire Line
+	650  6200 850  6200
+Wire Wire Line
+	850  4900 550  4900
+Wire Wire Line
+	550  4900 550  6350
+Wire Wire Line
+	550  6350 850  6350
+Wire Wire Line
+	1750 6200 3900 6200
+Wire Wire Line
+	1750 6350 3900 6350
+Wire Wire Line
+	4800 6200 5400 6200
+Wire Wire Line
+	4800 6350 5400 6350
+$Comp
+L power:GND #PWR0116
+U 1 1 63DCF2C9
+P 850 6500
+F 0 "#PWR0116" H 850 6250 50  0001 C CNN
+F 1 "GND" H 855 6327 50  0000 C CNN
+F 2 "" H 850 6500 50  0001 C CNN
+F 3 "" H 850 6500 50  0001 C CNN
+	1    850  6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 63DCFAA3
+P 3900 6500
+F 0 "#PWR0117" H 3900 6250 50  0001 C CNN
+F 1 "GND" H 3905 6327 50  0000 C CNN
+F 2 "" H 3900 6500 50  0001 C CNN
+F 3 "" H 3900 6500 50  0001 C CNN
+	1    3900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 63DD0384
+P 5400 6500
+F 0 "#PWR0118" H 5400 6250 50  0001 C CNN
+F 1 "GND" H 5405 6327 50  0000 C CNN
+F 2 "" H 5400 6500 50  0001 C CNN
+F 3 "" H 5400 6500 50  0001 C CNN
+	1    5400 6500
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 6500 2    50   Input ~ 0
+VCC
+Text HLabel 4800 6500 2    50   Input ~ 0
+VCC
+Text HLabel 6300 6500 2    50   Input ~ 0
+VCC
+$EndSCHEMATC
