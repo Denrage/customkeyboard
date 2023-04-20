@@ -1,0 +1,496 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 64421850
+P 1150 1100
+AR Path="/643B242A/64421850" Ref="SW1"  Part="1" 
+AR Path="/64402FD5/64421850" Ref="SW?"  Part="1" 
+F 0 "SW1" H 1150 1367 50  0000 C CNN
+F 1 "K_ESC" H 1150 1276 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1150 1100 50  0001 C CNN
+F 3 "~" H 1150 1100 50  0001 C CNN
+	1    1150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 64421851
+P 1600 1100
+AR Path="/643B242A/64421851" Ref="D1"  Part="1" 
+AR Path="/64402FD5/64421851" Ref="D?"  Part="1" 
+F 0 "D1" H 1600 883 50  0000 C CNN
+F 1 "D_ESC" H 1600 974 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1600 1100 50  0001 C CNN
+F 3 "~" H 1600 1100 50  0001 C CNN
+	1    1600 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW5
+U 1 1 644268D7
+P 2850 1150
+AR Path="/643B242A/644268D7" Ref="SW5"  Part="1" 
+AR Path="/64402FD5/644268D7" Ref="SW?"  Part="1" 
+F 0 "SW5" H 2850 1417 50  0000 C CNN
+F 1 "K_F1" H 2850 1326 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 2850 1150 50  0001 C CNN
+F 3 "~" H 2850 1150 50  0001 C CNN
+	1    2850 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 64421853
+P 3300 1150
+AR Path="/643B242A/64421853" Ref="D5"  Part="1" 
+AR Path="/64402FD5/64421853" Ref="D?"  Part="1" 
+F 0 "D5" H 3300 933 50  0000 C CNN
+F 1 "D_F1" H 3300 1024 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3300 1150 50  0001 C CNN
+F 3 "~" H 3300 1150 50  0001 C CNN
+	1    3300 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW9
+U 1 1 64421854
+P 4950 1150
+AR Path="/643B242A/64421854" Ref="SW9"  Part="1" 
+AR Path="/64402FD5/64421854" Ref="SW?"  Part="1" 
+F 0 "SW9" H 4950 1417 50  0000 C CNN
+F 1 "K_F2" H 4950 1326 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4950 1150 50  0001 C CNN
+F 3 "~" H 4950 1150 50  0001 C CNN
+	1    4950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 64421855
+P 5400 1150
+AR Path="/643B242A/64421855" Ref="D9"  Part="1" 
+AR Path="/64402FD5/64421855" Ref="D?"  Part="1" 
+F 0 "D9" H 5400 933 50  0000 C CNN
+F 1 "D_F2" H 5400 1024 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5400 1150 50  0001 C CNN
+F 3 "~" H 5400 1150 50  0001 C CNN
+	1    5400 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 64421857
+P 7450 1100
+AR Path="/643B242A/64421857" Ref="D14"  Part="1" 
+AR Path="/64402FD5/64421857" Ref="D?"  Part="1" 
+F 0 "D14" H 7450 883 50  0000 C CNN
+F 1 "D_F3" H 7450 974 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7450 1100 50  0001 C CNN
+F 3 "~" H 7450 1100 50  0001 C CNN
+	1    7450 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW2
+U 1 1 64421858
+P 1150 2050
+AR Path="/643B242A/64421858" Ref="SW2"  Part="1" 
+AR Path="/64402FD5/64421858" Ref="SW?"  Part="1" 
+F 0 "SW2" H 1150 2317 50  0000 C CNN
+F 1 "K_F4" H 1150 2226 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1150 2050 50  0001 C CNN
+F 3 "~" H 1150 2050 50  0001 C CNN
+	1    1150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 644290C5
+P 1600 2050
+AR Path="/643B242A/644290C5" Ref="D2"  Part="1" 
+AR Path="/64402FD5/644290C5" Ref="D?"  Part="1" 
+F 0 "D2" H 1600 1833 50  0000 C CNN
+F 1 "D_F4" H 1600 1924 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1600 2050 50  0001 C CNN
+F 3 "~" H 1600 2050 50  0001 C CNN
+	1    1600 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW6
+U 1 1 6442B02E
+P 3000 2050
+AR Path="/643B242A/6442B02E" Ref="SW6"  Part="1" 
+AR Path="/64402FD5/6442B02E" Ref="SW?"  Part="1" 
+F 0 "SW6" H 3000 2317 50  0000 C CNN
+F 1 "K_F5" H 3000 2226 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 3000 2050 50  0001 C CNN
+F 3 "~" H 3000 2050 50  0001 C CNN
+	1    3000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 644290C7
+P 3450 2050
+AR Path="/643B242A/644290C7" Ref="D6"  Part="1" 
+AR Path="/64402FD5/644290C7" Ref="D?"  Part="1" 
+F 0 "D6" H 3450 1833 50  0000 C CNN
+F 1 "D_F5" H 3450 1924 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3450 2050 50  0001 C CNN
+F 3 "~" H 3450 2050 50  0001 C CNN
+	1    3450 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW10
+U 1 1 6442185C
+P 4950 2050
+AR Path="/643B242A/6442185C" Ref="SW10"  Part="1" 
+AR Path="/64402FD5/6442185C" Ref="SW?"  Part="1" 
+F 0 "SW10" H 4950 2317 50  0000 C CNN
+F 1 "K_F6" H 4950 2226 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4950 2050 50  0001 C CNN
+F 3 "~" H 4950 2050 50  0001 C CNN
+	1    4950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 6442185D
+P 5400 2050
+AR Path="/643B242A/6442185D" Ref="D10"  Part="1" 
+AR Path="/64402FD5/6442185D" Ref="D?"  Part="1" 
+F 0 "D10" H 5400 1833 50  0000 C CNN
+F 1 "D_F6" H 5400 1924 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5400 2050 50  0001 C CNN
+F 3 "~" H 5400 2050 50  0001 C CNN
+	1    5400 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW13
+U 1 1 644268E3
+P 6950 2000
+AR Path="/643B242A/644268E3" Ref="SW13"  Part="1" 
+AR Path="/64402FD5/644268E3" Ref="SW?"  Part="1" 
+F 0 "SW13" H 6950 2267 50  0000 C CNN
+F 1 "K_F7" H 6950 2176 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 6950 2000 50  0001 C CNN
+F 3 "~" H 6950 2000 50  0001 C CNN
+	1    6950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 643BB0A6
+P 7400 2000
+AR Path="/643B242A/643BB0A6" Ref="D13"  Part="1" 
+AR Path="/64402FD5/643BB0A6" Ref="D?"  Part="1" 
+F 0 "D13" H 7400 1783 50  0000 C CNN
+F 1 "D_F7" H 7400 1874 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7400 2000 50  0001 C CNN
+F 3 "~" H 7400 2000 50  0001 C CNN
+	1    7400 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D16
+U 1 1 64421861
+P 8950 2000
+AR Path="/643B242A/64421861" Ref="D16"  Part="1" 
+AR Path="/64402FD5/64421861" Ref="D?"  Part="1" 
+F 0 "D16" H 8950 1783 50  0000 C CNN
+F 1 "D_F8" H 8950 1874 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 8950 2000 50  0001 C CNN
+F 3 "~" H 8950 2000 50  0001 C CNN
+	1    8950 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW3
+U 1 1 64421862
+P 1150 3050
+AR Path="/643B242A/64421862" Ref="SW3"  Part="1" 
+AR Path="/64402FD5/64421862" Ref="SW?"  Part="1" 
+F 0 "SW3" H 1150 3317 50  0000 C CNN
+F 1 "K_F9" H 1150 3226 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1150 3050 50  0001 C CNN
+F 3 "~" H 1150 3050 50  0001 C CNN
+	1    1150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 644290CF
+P 1600 3050
+AR Path="/643B242A/644290CF" Ref="D3"  Part="1" 
+AR Path="/64402FD5/644290CF" Ref="D?"  Part="1" 
+F 0 "D3" H 1600 2833 50  0000 C CNN
+F 1 "D_F9" H 1600 2924 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1600 3050 50  0001 C CNN
+F 3 "~" H 1600 3050 50  0001 C CNN
+	1    1600 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW7
+U 1 1 643BC016
+P 3150 3050
+AR Path="/643B242A/643BC016" Ref="SW7"  Part="1" 
+AR Path="/64402FD5/643BC016" Ref="SW?"  Part="1" 
+F 0 "SW7" H 3150 3317 50  0000 C CNN
+F 1 "K_F10" H 3150 3226 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 3150 3050 50  0001 C CNN
+F 3 "~" H 3150 3050 50  0001 C CNN
+	1    3150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 643BC01C
+P 3600 3050
+AR Path="/643B242A/643BC01C" Ref="D7"  Part="1" 
+AR Path="/64402FD5/643BC01C" Ref="D?"  Part="1" 
+F 0 "D7" H 3600 2833 50  0000 C CNN
+F 1 "D_F10" H 3600 2924 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3600 3050 50  0001 C CNN
+F 3 "~" H 3600 3050 50  0001 C CNN
+	1    3600 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW11
+U 1 1 643BC40E
+P 4950 3000
+AR Path="/643B242A/643BC40E" Ref="SW11"  Part="1" 
+AR Path="/64402FD5/643BC40E" Ref="SW?"  Part="1" 
+F 0 "SW11" H 4950 3267 50  0000 C CNN
+F 1 "K_F11" H 4950 3176 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4950 3000 50  0001 C CNN
+F 3 "~" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D11
+U 1 1 643BC414
+P 5400 3000
+AR Path="/643B242A/643BC414" Ref="D11"  Part="1" 
+AR Path="/64402FD5/643BC414" Ref="D?"  Part="1" 
+F 0 "D11" H 5400 2783 50  0000 C CNN
+F 1 "D_F11" H 5400 2874 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5400 3000 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW15
+U 1 1 644268EB
+P 7000 3000
+AR Path="/643B242A/644268EB" Ref="SW15"  Part="1" 
+AR Path="/64402FD5/644268EB" Ref="SW?"  Part="1" 
+F 0 "SW15" H 7000 3267 50  0000 C CNN
+F 1 "K_F12" H 7000 3176 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 7000 3000 50  0001 C CNN
+F 3 "~" H 7000 3000 50  0001 C CNN
+	1    7000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 6442B039
+P 7450 3000
+AR Path="/643B242A/6442B039" Ref="D15"  Part="1" 
+AR Path="/64402FD5/6442B039" Ref="D?"  Part="1" 
+F 0 "D15" H 7450 2783 50  0000 C CNN
+F 1 "D_F12" H 7450 2874 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7450 3000 50  0001 C CNN
+F 3 "~" H 7450 3000 50  0001 C CNN
+	1    7450 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW4
+U 1 1 644268ED
+P 1150 4200
+AR Path="/643B242A/644268ED" Ref="SW4"  Part="1" 
+AR Path="/64402FD5/644268ED" Ref="SW?"  Part="1" 
+F 0 "SW4" H 1150 4467 50  0000 C CNN
+F 1 "K_PRINT" H 1150 4376 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 1150 4200 50  0001 C CNN
+F 3 "~" H 1150 4200 50  0001 C CNN
+	1    1150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 644268EE
+P 1600 4200
+AR Path="/643B242A/644268EE" Ref="D4"  Part="1" 
+AR Path="/64402FD5/644268EE" Ref="D?"  Part="1" 
+F 0 "D4" H 1600 3983 50  0000 C CNN
+F 1 "D_PRINT" H 1600 4074 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1600 4200 50  0001 C CNN
+F 3 "~" H 1600 4200 50  0001 C CNN
+	1    1600 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW8
+U 1 1 644268EF
+P 3150 4200
+AR Path="/643B242A/644268EF" Ref="SW8"  Part="1" 
+AR Path="/64402FD5/644268EF" Ref="SW?"  Part="1" 
+F 0 "SW8" H 3150 4467 50  0000 C CNN
+F 1 "K_SCRLCK" H 3150 4376 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 3150 4200 50  0001 C CNN
+F 3 "~" H 3150 4200 50  0001 C CNN
+	1    3150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 6442186B
+P 3600 4200
+AR Path="/643B242A/6442186B" Ref="D8"  Part="1" 
+AR Path="/64402FD5/6442186B" Ref="D?"  Part="1" 
+F 0 "D8" H 3600 3983 50  0000 C CNN
+F 1 "D_SCRLCK" H 3600 4074 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3600 4200 50  0001 C CNN
+F 3 "~" H 3600 4200 50  0001 C CNN
+	1    3600 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW12
+U 1 1 6442186C
+P 4950 4100
+AR Path="/643B242A/6442186C" Ref="SW12"  Part="1" 
+AR Path="/64402FD5/6442186C" Ref="SW?"  Part="1" 
+F 0 "SW12" H 4950 4367 50  0000 C CNN
+F 1 "K_BREAK" H 4950 4276 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 4950 4100 50  0001 C CNN
+F 3 "~" H 4950 4100 50  0001 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 643BD6E2
+P 5400 4100
+AR Path="/643B242A/643BD6E2" Ref="D12"  Part="1" 
+AR Path="/64402FD5/643BD6E2" Ref="D?"  Part="1" 
+F 0 "D12" H 5400 3883 50  0000 C CNN
+F 1 "D_BREAK" H 5400 3974 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5400 4100 50  0001 C CNN
+F 3 "~" H 5400 4100 50  0001 C CNN
+	1    5400 4100
+	-1   0    0    1   
+$EndComp
+Text HLabel 1750 1100 2    50   Input ~ 0
+Row1
+Text HLabel 3450 1150 2    50   Input ~ 0
+Row1
+Text HLabel 5550 1150 2    50   Input ~ 0
+Row1
+Text HLabel 7600 1100 2    50   Input ~ 0
+Row1
+Text HLabel 9100 2000 2    50   Input ~ 0
+Row1
+Text HLabel 7600 3000 2    50   Input ~ 0
+Row1
+Text HLabel 7550 2000 2    50   Input ~ 0
+Row1
+Text HLabel 5550 2050 2    50   Input ~ 0
+Row1
+Text HLabel 5550 3000 2    50   Input ~ 0
+Row1
+Text HLabel 5550 4100 2    50   Input ~ 0
+Row1
+Text HLabel 3750 4200 2    50   Input ~ 0
+Row1
+Text HLabel 3750 3050 2    50   Input ~ 0
+Row1
+Text HLabel 3600 2050 2    50   Input ~ 0
+Row1
+Text HLabel 1750 2050 2    50   Input ~ 0
+Row1
+Text HLabel 1750 3050 2    50   Input ~ 0
+Row1
+Text HLabel 1750 4200 2    50   Input ~ 0
+Row1
+$Comp
+L Switch:SW_DIP_x01 SW14
+U 1 1 64421856
+P 7000 1100
+AR Path="/643B242A/64421856" Ref="SW14"  Part="1" 
+AR Path="/64402FD5/64421856" Ref="SW?"  Part="1" 
+F 0 "SW14" H 7000 1367 50  0000 C CNN
+F 1 "K_F3" H 7000 1276 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 7000 1100 50  0001 C CNN
+F 3 "~" H 7000 1100 50  0001 C CNN
+	1    7000 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW16
+U 1 1 644290CC
+P 8500 2000
+AR Path="/643B242A/644290CC" Ref="SW16"  Part="1" 
+AR Path="/64402FD5/644290CC" Ref="SW?"  Part="1" 
+F 0 "SW16" H 8500 2267 50  0000 C CNN
+F 1 "K_F8" H 8500 2176 50  0000 C CNN
+F 2 "hotswap:Kailh_socket_MX" H 8500 2000 50  0001 C CNN
+F 3 "~" H 8500 2000 50  0001 C CNN
+	1    8500 2000
+	1    0    0    -1  
+$EndComp
+Text HLabel 850  1100 0    50   Input ~ 0
+Col1
+Text HLabel 2550 1150 0    50   Input ~ 0
+Col3
+Text HLabel 4650 1150 0    50   Input ~ 0
+Col4
+Text HLabel 6700 1100 0    50   Input ~ 0
+Col5
+Text HLabel 850  2050 0    50   Input ~ 0
+Col6
+Text HLabel 2700 2050 0    50   Input ~ 0
+Col7
+Text HLabel 4650 2050 0    50   Input ~ 0
+Col8
+Text HLabel 6650 2000 0    50   Input ~ 0
+Col9
+Text HLabel 8200 2000 0    50   Input ~ 0
+Col10
+Text HLabel 850  3050 0    50   Input ~ 0
+Col12
+Text HLabel 2850 3050 0    50   Input ~ 0
+Col13
+Text HLabel 4650 3000 0    50   Input ~ 0
+Col14
+Text HLabel 6700 3000 0    50   Input ~ 0
+Col15
+Text HLabel 850  4200 0    50   Input ~ 0
+Col16
+Text HLabel 2850 4200 0    50   Input ~ 0
+Col17
+Text HLabel 4650 4100 0    50   Input ~ 0
+Col18
+$EndSCHEMATC
