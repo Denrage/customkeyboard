@@ -341,4 +341,6 @@ Text GLabel 7300 1500 0    50   Input ~ 0
 DIN
 Text GLabel 7300 1600 0    50   Input ~ 0
 CIN
+Text GLabel 3500 1400 2    50   Input ~ 0
+Col11
 $EndSCHEMATC
