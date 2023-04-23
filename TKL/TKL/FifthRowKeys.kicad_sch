@@ -132,7 +132,6 @@
   )
 
 
-
   (hierarchical_label "Col1" (shape input) (at 21.59 27.94 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0103eed0-e009-42b2-a3db-57e7d9c08ed3)

@@ -132,7 +132,6 @@
   )
 
 
-
   (hierarchical_label "Col10" (shape input) (at 208.28 50.8 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 00c1cac6-9cbb-4ec5-bc24-3deafd0ca6fc)

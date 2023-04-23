@@ -1627,6 +1627,10 @@
       {
         "netclass": "Power",
         "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D-"
       }
     ]
   },

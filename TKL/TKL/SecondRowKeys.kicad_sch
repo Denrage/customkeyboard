@@ -132,7 +132,6 @@
   )
 
 
-
   (hierarchical_label "Col8" (shape input) (at 118.11 52.07 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0182cf4c-f97a-4114-af78-e46293f6bdd0)

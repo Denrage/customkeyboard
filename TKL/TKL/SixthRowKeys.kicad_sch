@@ -132,7 +132,6 @@
   )
 
 
-
   (hierarchical_label "Col14" (shape input) (at 71.12 50.8 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 003129c4-d758-43b2-943a-42acbba162ff)

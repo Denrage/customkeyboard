@@ -132,7 +132,6 @@
   )
 
 
-
   (hierarchical_label "Row3" (shape input) (at 44.45 105.41 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0489d17f-b625-4377-819e-fdb75dcc8f38)
