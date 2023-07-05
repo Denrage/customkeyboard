@@ -1,6 +1,6 @@
 using Avalonia.Media;
 using HarfBuzzSharp;
-using HidApiAdapter;
+using HidApi;
 using ReactiveUI;
 using System;
 using System.Collections.Generic;
@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Management;
 using System.Reactive;
+using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -20,6 +21,24 @@ public class MainWindowViewModel : ViewModelBase
     private readonly UsbService usbService;
     private bool keyboardConnected;
     private Color color;
+    private SetRgbEffectCommand.Effects selectedEffect;
+
+    public IEnumerable<SetRgbEffectCommand.Effects> Effects => Enum.GetValues<SetRgbEffectCommand.Effects>();
+
+    public SetRgbEffectCommand.Effects SelectedEffect
+    {
+        get => selectedEffect;
+        set
+        {
+            if (this.RaiseAndSetIfChanged(ref this.selectedEffect, value) == value)
+            {
+                this.usbService.Communication.SendPacket(new SetRgbEffectCommand()
+                {
+                    Effect = value
+                });
+            }
+        }
+    }
 
     public Color Color
     {
@@ -28,7 +47,10 @@ public class MainWindowViewModel : ViewModelBase
         {
             if (this.RaiseAndSetIfChanged(ref this.color, value) == value)
             {
-                this.SetColorToKeyboard();
+                this.usbService.Communication.SendPacket(new SetHsvColorCommand()
+                {
+                    HsvColor = SetHsvColorCommand.Color.FromRgb(this.Color.R, this.Color.G, this.Color.B),
+                });
             }
         }
     }
@@ -44,14 +66,7 @@ public class MainWindowViewModel : ViewModelBase
         this.usbService = new UsbService(new UsbListener());
         usbService.KeyboardConnected += () => this.KeyboardConnected = true;
         usbService.KeyboardDisconnected += () => this.KeyboardConnected = false;
-    }
-
-    public void SetColorToKeyboard()
-    {
-        this.usbService.Communication.SendPacket(new SetHsvColorCommand()
-        {
-            HsvColor = SetHsvColorCommand.Color.FromRgb(this.Color.R, this.Color.G, this.Color.B),
-        });
+        this.usbService.Initialize();
     }
 }
 
@@ -59,6 +74,7 @@ public class UsbService
 {
     private const ushort VendorId = 0xFEEA;
     private const ushort ProductId = 0x001;
+    private readonly UsbListener listener;
 
     public event Action KeyboardConnected;
     public event Action KeyboardDisconnected;
@@ -67,15 +83,21 @@ public class UsbService
 
     public UsbService(UsbListener listener)
     {
-        listener.UsbDeviceConnected += DeviceConnected;
-        listener.UsbDeviceDisconnected += DeviceDisconnected;
+        this.listener = listener;
+    }
+
+    public void Initialize()
+    {
+        this.listener.UsbDeviceConnected += DeviceConnected;
+        this.listener.UsbDeviceDisconnected += DeviceDisconnected;
+        this.listener.Start();
     }
 
     private void DeviceConnected(UsbDevice device)
     {
         if (device.ProductId == ProductId && device.VendorId == VendorId)
         {
-            var hidDevice = HidDeviceManager.GetManager().SearchDevices(VendorId, ProductId).FirstOrDefault(x => x.Usage == 0x61 && x.UsagePage == 0xFF60);
+            var hidDevice = HidApi.Hid.Enumerate(VendorId, ProductId).FirstOrDefault(x => x.Usage == 0x61 && x.UsagePage == 0xFF60);
             if (hidDevice != null)
             {
                 this.Communication = new HidCommunication(hidDevice);
@@ -90,7 +112,7 @@ public class UsbService
         if (device.ProductId == ProductId && device.VendorId == VendorId)
         {
             this.Communication?.Dispose();
-            this.Communication = null;
+            //this.Communication = null;
             this.KeyboardDisconnected?.Invoke();
         }
     }
@@ -161,13 +183,17 @@ public class UsbListener
 {
     private static readonly Regex UsbIdRegex = new Regex(@"USB\\VID_([0-9A-F]{4})&PID_([0-9A-F]{4})&REV_([0-9A-F]{4})");
     private readonly List<UsbDevice> Devices = new List<UsbDevice>();
-    private readonly ManagementEventWatcher deviceConnectedWatcher;
-    private readonly ManagementEventWatcher deviceDisconnectedWatcher;
+    private ManagementEventWatcher deviceConnectedWatcher;
+    private ManagementEventWatcher deviceDisconnectedWatcher;
 
     public event Action<UsbDevice> UsbDeviceConnected;
     public event Action<UsbDevice> UsbDeviceDisconnected;
 
     public UsbListener()
+    {
+    }
+
+    public void Start()
     {
         this.deviceConnectedWatcher ??= CreateManagementEventWatcher("__InstanceCreationEvent");
         this.deviceConnectedWatcher.EventArrived += UsbDeviceWmiEvent;
@@ -195,8 +221,13 @@ public class UsbListener
                 if (device != null && !listed)
                 {
                     var usbDevice = new UsbDevice(device);
+
+                    if (!this.Devices.Any(x => x.VendorId == usbDevice.VendorId && x.ProductId == usbDevice.ProductId))
+                    {
+                        this.UsbDeviceConnected?.Invoke(usbDevice);
+                    }
+
                     this.Devices.Add(usbDevice);
-                    this.UsbDeviceConnected?.Invoke(usbDevice);
                 }
             }
         }
@@ -236,17 +267,19 @@ public class UsbListener
 
 public class HidCommunication : IDisposable
 {
-    private readonly HidDevice device;
+    private readonly DeviceInfo deviceInfo;
+    private Device device;
+    private readonly CancellationTokenSource readCancellationTokenSource = new CancellationTokenSource();
 
-    public HidCommunication(HidDevice device)
+    public HidCommunication(DeviceInfo device)
     {
-        this.device = device;
+        this.deviceInfo = device;
     }
 
     public void Open()
     {
-        this.device.Connect();
-        Task.Run(() => this.ReceivePacket());
+        this.device = this.deviceInfo.ConnectToDevice();
+        Task.Run(() => this.ReceivePacket(this.readCancellationTokenSource.Token));
     }
 
     public void SendPacket(HidPacket packet)
@@ -257,6 +290,7 @@ public class HidCommunication : IDisposable
 
         using (var binaryWriter = new BinaryWriter(messageToSend, Encoding.UTF8, true))
         {
+            binaryWriter.Write((byte)0x0);
             binaryWriter.Write(message.Length);
             binaryWriter.Write(message);
         }
@@ -271,16 +305,28 @@ public class HidCommunication : IDisposable
         }
     }
 
-    public void ReceivePacket()
+    public void ReceivePacket(CancellationToken ct)
     {
         while (true)
         {
             try
             {
-                var buffer = new byte[32];
-                this.device.Read(buffer, buffer.Length);
+                ct.ThrowIfCancellationRequested();
+                var buffer = this.device.ReadTimeout(32, 500);
+                var bytesRead = buffer.Length;
+
+                if (buffer.Length == -1)
+                {
+                    return;
+                }
+
+                if (buffer.Length == 0)
+                {
+                    continue;
+                }
+
                 var message = new MemoryStream();
-                var length = BitConverter.ToInt32(buffer, 0);
+                var length = BitConverter.ToInt32(buffer[..4]);
 
                 if (length == 0)
                 {
@@ -288,13 +334,13 @@ public class HidCommunication : IDisposable
                     continue;
                 }
 
-                var bytesRead = buffer.Length - sizeof(int);
-                message.Write(buffer, sizeof(int), (int)(buffer.Length - sizeof(int)));
+                bytesRead -= sizeof(int);
+                message.Write(buffer[4..]);
                 while (bytesRead < length)
                 {
-                    var messageBuffer = new byte[32];
-                    device.Read(messageBuffer, messageBuffer.Length);
-                    message.Write(messageBuffer, 0, messageBuffer.Length);
+                    ct.ThrowIfCancellationRequested();
+                    var messageBuffer = this.device.Read(32);
+                    message.Write(messageBuffer);
                     bytesRead += messageBuffer.Length;
                 }
 
@@ -302,15 +348,18 @@ public class HidCommunication : IDisposable
 
                 message.Dispose();
             }
-            catch (Exception)
+            catch (HidApi.HidException ex)
             {
-
+                return;
             }
         }
     }
 
     public void Dispose()
-        => this.device.Disconnect();
+    {
+        this.readCancellationTokenSource.Cancel();
+        this.device.Dispose();
+    }
 }
 
 public abstract class HidPacket
@@ -458,7 +507,7 @@ public class SetRgbEffectCommand : HidPacket
 
     public Effects Effect { get; set; }
 
-    public override HidCommand Command => throw new NotImplementedException();
+    public override HidCommand Command => HidCommand.SetRgbEffect;
 
     protected override byte[] SerializeInternal(MemoryStream message)
     {

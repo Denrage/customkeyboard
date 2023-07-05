@@ -9,14 +9,21 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="QmkConfigurator">
 
-    <Design.DataContext>
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
 
-    <StackPanel>
-        <colorpicker:ColorPicker Color="{Binding Color, Mode=TwoWay}" IsCIELABVisible="False" IsColourBlindnessSelectorVisible="False"></colorpicker:ColorPicker>
-        <DockPanel DockPanel.Dock="Bottom">
-            <TextBlock Text="{Binding KeyboardConnected}"/>
-        </DockPanel>
-    </StackPanel>
+	<Grid>
+		<StackPanel>
+			<colorpicker:ColorPicker Color="{Binding Color, Mode=TwoWay}" IsCIELABVisible="False" IsColourBlindnessSelectorVisible="False"></colorpicker:ColorPicker>
+			<ComboBox Items="{Binding Effects}" SelectedItem="{Binding SelectedEffect}"></ComboBox>
+			<DockPanel DockPanel.Dock="Bottom">
+				<TextBlock Text="{Binding KeyboardConnected}"/>
+			</DockPanel>
+		</StackPanel>
+		<Grid IsVisible="{Binding !KeyboardConnected}">
+			<Rectangle Fill="Black" Opacity="0.9"/>
+			<TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Keyboard Not Connected!"/>
+		</Grid>
+	</Grid>
 </Window>
