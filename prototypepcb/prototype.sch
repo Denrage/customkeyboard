@@ -310,4 +310,282 @@ F 3 "" H 1900 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 4350 1900 4350
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 611A12C2
+P 7950 1700
+F 0 "MX?" H 7983 1923 60  0000 C CNN
+F 1 "MX-NoLED" H 7983 1849 20  0000 C CNN
+F 2 "" H 7325 1675 60  0001 C CNN
+F 3 "" H 7325 1675 60  0001 C CNN
+	1    7950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 611A323B
+P 8600 1700
+F 0 "MX?" H 8633 1923 60  0000 C CNN
+F 1 "MX-NoLED" H 8633 1849 20  0000 C CNN
+F 2 "" H 7975 1675 60  0001 C CNN
+F 3 "" H 7975 1675 60  0001 C CNN
+	1    8600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 611A4413
+P 7950 2400
+F 0 "MX?" H 7983 2623 60  0000 C CNN
+F 1 "MX-NoLED" H 7983 2549 20  0000 C CNN
+F 2 "" H 7325 2375 60  0001 C CNN
+F 3 "" H 7325 2375 60  0001 C CNN
+	1    7950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 611A535C
+P 8600 2400
+F 0 "MX?" H 8633 2623 60  0000 C CNN
+F 1 "MX-NoLED" H 8633 2549 20  0000 C CNN
+F 2 "" H 7975 2375 60  0001 C CNN
+F 3 "" H 7975 2375 60  0001 C CNN
+	1    8600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 611ACEEF
+P 7800 1950
+F 0 "D?" V 7846 1880 50  0000 R CNN
+F 1 "D_Small" V 7755 1880 50  0000 R CNN
+F 2 "" V 7800 1950 50  0001 C CNN
+F 3 "~" V 7800 1950 50  0001 C CNN
+	1    7800 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 611B017F
+P 7750 2650
+F 0 "D?" V 7796 2580 50  0000 R CNN
+F 1 "D_Small" V 7705 2580 50  0000 R CNN
+F 2 "" V 7750 2650 50  0001 C CNN
+F 3 "~" V 7750 2650 50  0001 C CNN
+	1    7750 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 611B0F38
+P 8450 2650
+F 0 "D?" V 8496 2580 50  0000 R CNN
+F 1 "D_Small" V 8405 2580 50  0000 R CNN
+F 2 "" V 8450 2650 50  0001 C CNN
+F 3 "~" V 8450 2650 50  0001 C CNN
+	1    8450 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 611B1E09
+P 8450 1950
+F 0 "D?" V 8496 1880 50  0000 R CNN
+F 1 "D_Small" V 8405 1880 50  0000 R CNN
+F 2 "" V 8450 1950 50  0001 C CNN
+F 3 "~" V 8450 1950 50  0001 C CNN
+	1    8450 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 1850 7800 1850
+Wire Wire Line
+	8550 1850 8450 1850
+Wire Wire Line
+	8550 2550 8450 2550
+Wire Wire Line
+	7900 2550 7750 2550
+Wire Wire Line
+	8100 2350 8100 1650
+Wire Wire Line
+	8750 2350 8750 1650
+Text GLabel 7600 2050 0    50   Input ~ 0
+Row0
+Text GLabel 7600 2750 0    50   Input ~ 0
+Row1
+Wire Wire Line
+	8450 2750 7750 2750
+Connection ~ 7750 2750
+Wire Wire Line
+	7750 2750 7600 2750
+Wire Wire Line
+	8450 2050 7800 2050
+Connection ~ 7800 2050
+Wire Wire Line
+	7800 2050 7600 2050
+Text GLabel 8100 1350 1    50   Input ~ 0
+Col0
+Text GLabel 8750 1350 1    50   Input ~ 0
+Col1
+Wire Wire Line
+	8100 1650 8100 1350
+Connection ~ 8100 1650
+Wire Wire Line
+	8750 1650 8750 1350
+Connection ~ 8750 1650
+Text GLabel 6400 3300 2    50   Input ~ 0
+Col0
+Text GLabel 6400 3400 2    50   Input ~ 0
+Col1
+Text GLabel 6400 3500 2    50   Input ~ 0
+Row0
+Text GLabel 6400 3200 2    50   Input ~ 0
+Row1
+Wire Wire Line
+	6300 3300 6400 3300
+Wire Wire Line
+	6300 3400 6400 3400
+Wire Wire Line
+	6300 3500 6400 3500
+Text GLabel 6400 2200 2    50   Input ~ 0
+RGBDATA
+Wire Wire Line
+	6300 2200 6400 2200
+Wire Wire Line
+	6300 3200 6400 3200
+$Comp
+L LED:WS2812B D?
+U 1 1 611D30EE
+P 8250 3700
+F 0 "D?" H 8594 3746 50  0000 L CNN
+F 1 "WS2812B" H 8594 3655 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8300 3400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8350 3325 50  0001 L TNN
+	1    8250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 611D828E
+P 9350 3700
+F 0 "D?" H 9694 3746 50  0000 L CNN
+F 1 "WS2812B" H 9694 3655 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9400 3400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9450 3325 50  0001 L TNN
+	1    9350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 611D9F76
+P 8250 4500
+F 0 "D?" H 8594 4546 50  0000 L CNN
+F 1 "WS2812B" H 8594 4455 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8300 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8350 4125 50  0001 L TNN
+	1    8250 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 611DBA38
+P 9350 4500
+F 0 "D?" H 9050 4700 50  0000 L CNN
+F 1 "WS2812B" H 8800 4600 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9400 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9450 4125 50  0001 L TNN
+	1    9350 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8550 3700 9050 3700
+Wire Wire Line
+	8550 4500 9050 4500
+Text GLabel 7800 3700 0    50   Input ~ 0
+RGBDATA
+Wire Wire Line
+	7800 3700 7950 3700
+$Comp
+L power:+5V #PWR?
+U 1 1 611E2A05
+P 8750 3400
+F 0 "#PWR?" H 8750 3250 50  0001 C CNN
+F 1 "+5V" H 8765 3573 50  0000 C CNN
+F 2 "" H 8750 3400 50  0001 C CNN
+F 3 "" H 8750 3400 50  0001 C CNN
+	1    8750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 611E46D8
+P 8800 3850
+F 0 "#PWR?" H 8800 3600 50  0001 C CNN
+F 1 "GND" H 8805 3677 50  0000 C CNN
+F 2 "" H 8800 3850 50  0001 C CNN
+F 3 "" H 8800 3850 50  0001 C CNN
+	1    8800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3400 8750 3400
+Connection ~ 8750 3400
+Wire Wire Line
+	8750 3400 9350 3400
+Wire Wire Line
+	8250 4000 8550 4000
+Wire Wire Line
+	8550 4000 8550 3850
+Wire Wire Line
+	9000 3850 9000 4000
+Wire Wire Line
+	9000 4000 9350 4000
+Connection ~ 8800 3850
+Wire Wire Line
+	8800 3850 9000 3850
+Wire Wire Line
+	8550 3850 8800 3850
+Text GLabel 6450 5100 2    50   Input ~ 0
+UGRGBDATA
+Wire Wire Line
+	6450 5100 6300 5100
+$Comp
+L power:GND #PWR?
+U 1 1 611C27B3
+P 8800 4250
+F 0 "#PWR?" H 8800 4000 50  0001 C CNN
+F 1 "GND" H 8805 4077 50  0000 C CNN
+F 2 "" H 8800 4250 50  0001 C CNN
+F 3 "" H 8800 4250 50  0001 C CNN
+	1    8800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4200 8800 4250
+Wire Wire Line
+	8250 4200 8800 4200
+Wire Wire Line
+	8800 4200 9350 4200
+Connection ~ 8800 4200
+Wire Wire Line
+	8250 4800 8800 4800
+$Comp
+L power:+5V #PWR?
+U 1 1 611C80C0
+P 8800 4750
+F 0 "#PWR?" H 8800 4600 50  0001 C CNN
+F 1 "+5V" H 8815 4923 50  0000 C CNN
+F 2 "" H 8800 4750 50  0001 C CNN
+F 3 "" H 8800 4750 50  0001 C CNN
+	1    8800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4800 8800 4750
+Connection ~ 8800 4800
+Wire Wire Line
+	8800 4800 9350 4800
+Wire Wire Line
+	9650 3700 9650 4500
 $EndSCHEMATC
