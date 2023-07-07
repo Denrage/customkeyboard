@@ -1,0 +1,2 @@
+- Flip switch, so led is on the top side of the legend
+- Led ~1-2mm further away from the switch
