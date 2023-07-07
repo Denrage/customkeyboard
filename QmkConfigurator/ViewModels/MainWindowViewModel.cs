@@ -49,7 +49,7 @@ public class MainWindowViewModel : ViewModelBase
             {
                 this.usbService.Communication.SendPacket(new SetHsvColorCommand()
                 {
-                    HsvColor = SetHsvColorCommand.Color.FromRgb(this.Color.R, this.Color.G, this.Color.B),
+                    HsvColor = SetHsvColorCommand.Color.FromRgb(this.Color.G, this.Color.B, this.Color.R),
                 });
             }
         }
