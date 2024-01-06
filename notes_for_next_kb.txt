@@ -1,2 +1,3 @@
-- Flip switch, so led is on the top side of the legend
-- Led ~1-2mm further away from the switch
+- LED collides with stabilizer (LSHIFT)
+- Stabilizer Foots collide with other stabilizers (Enter and RSHIFT f.e.)
+- Either embed MCU or position it completely of the matrix
